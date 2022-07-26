@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300&family=Sanchez&display=swap');
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  border: 5px solid transparent;
+  background-clip: content-box;
+  background-color: #241B2F;
+}
+
+
+html, body {
+  background: #241B2F;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  color: #fff;
+  font-family: 'Readex Pro', sans-serif;
+  user-select: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body > section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.three-rows {
+  > div {
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  > aside {
+    height: 50%;
+  }
+}
+
+.two-columns {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 5%;
+  
+  &:nth-child(even) {
+    flex-direction: row;
+
+    > div {
+      padding-left: 5%;
+    }
+  }
+
+  &:nth-child(odd) {
+    flex-direction: row-reverse;
+
+    > div {
+      padding-right: 5%;
+    }
+  }
+
+  > aside {
+    flex-grow: 1;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    > * {
+      max-width: 100%;
+    }
+  }
+
+  > div {
+    flex-grow: 2;
+    width: 67%;
+  }
+
+
+}
+
+.mission-details {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mission-title {
+  border-left: 1px solid currentColor;
+  padding-left: 0.4em;
+  margin-bottom: 8px;
+  font-style: italic;
+}
+
+.mission-company {
+  font-size: 2em;
+  font-family: 'Sanchez', 'Readex Pro', sans-serif;
+}
+
+.mission-date {
+  font-size: 1em;
+  line-height: 2em;
+  margin-left: auto;
+} 
+
+.mission-description {
+  margin-bottom: 8px;
+}
+
+.mission-stack {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  > li {
+    font-size: 0.8em;
+    display: inline-flex;
+    padding: 2px 6px;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.33);
+    margin-right: 8px;
+    margin-bottom: 4px;
+  }
+}
+
+.hexagonal {
+  clip-path: polygon(50% 0%, 93.3007% 25%, 93.3007% 75%, 50% 100%, 6.6992% 75%, 6.6992% 25%);
+  pointer-events: none;
+}
+
+
+#me-fullname {
+  font-family: 'Sanchez', 'Readex Pro', sans-serif;
+  font-size: 10vh;
+}
+
+#me-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link {
+  width: 20%;
+  margin: auto;
+}
+
+.social-link img {
+  width: 100%;
+  height: auto;
+}
+
+#me-title {
+  font-size: 6vh;
+}
+
+#me-avatar {
+  height: 100%;
+  width: auto;
+}
+
+#mission-ledger {
+  background: #ddd;
+  color: #111;
+}
+
+#mission-tiller {
+  background: #324153;
+  color: #e6e6e6;
+}
+
+#mission-lecab {
+  background: #ddd;
+  color: #233746;
+}
+
+#mission-habx {
+  background: #061a3c;
+  color: #fff;
+}
